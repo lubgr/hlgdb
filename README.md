@@ -2,13 +2,13 @@ Highlight source code in GDB
 ============================
 
 Syntax highlighting for gdb with a python extension that uses
-[pygments](http://http://pygments.org/). This affects `list`, `next` and `step` and is achieved by
-overwriting their shortcuts `l`, `n` and `s` (thus, if default behavior is retained by invoking the
-full command).
+[pygments](http://http://pygments.org/). This affects the commands `list`, `next` and `step` and is
+achieved by overriding their shortcuts `l`, `n` and `s` (thus, the default behavior is retained by
+invoking the full command).
 
 **Requirements**
 
-* [pygments](http://http://pygments.org/) package
+* the [pygments](http://http://pygments.org/) package for python
 * gdb version 7.6\* or higher
 
 **Installation**
@@ -16,7 +16,7 @@ full command).
 Simple as that:
 
 * download the script and store it where you like
-* invoke it from your .gdbinit via `source`
+* invoke it from your .gdbinit via `source path/to/the/script`
 
 **Languages**
 
